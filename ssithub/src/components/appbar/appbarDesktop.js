@@ -1,10 +1,8 @@
-import { ListItem, ListItemText } from "@mui/material";
+import {  ListItemText } from "@mui/material";
 import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar";
+import Actions from "./actions";
 
-export default function AppbarDesktop ({
-    matches
-
-}){
+export default function AppbarDesktop ({matches}){
     return(
         <AppbarContainer>
             <AppbarHeader>
@@ -12,10 +10,11 @@ export default function AppbarDesktop ({
             </AppbarHeader>
             <MyList type="row">
                 <ListItemText primary="Home" />
-                <ListItemText primary="Cat" />
-                <ListItemText primary="Pro" />
+                <ListItemText primary="Events" />
+                <ListItemText primary="Maps" />
                 <ListItemText primary="Contact Us" />
             </MyList>
+            <Actions/>
             </AppbarContainer>
     );
 }
