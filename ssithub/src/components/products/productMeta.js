@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { ProductMetaWrapper } from "../../styles/Products";
 
 
+
 export default function ProductMeta({product,matches}){
     return(
         <ProductMetaWrapper>
