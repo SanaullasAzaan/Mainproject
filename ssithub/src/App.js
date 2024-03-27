@@ -2,6 +2,8 @@ import './App.css';
 import {AppBar, Button, Container, ThemeProvider} from '@mui/material';
 import theme from './styles/theme';
 import Appbar from './components/appbar';
+import Banner from './components/appbar/banner';
+import Promotions from './components/promotions';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       }}
       >    
       <Appbar/>
-      <Button variant='contained'>test</Button>
+      <Banner/>
+      <Promotions/>
+      
       </Container>
 
       </ThemeProvider>

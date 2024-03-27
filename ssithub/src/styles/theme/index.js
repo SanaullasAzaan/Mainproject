@@ -1,4 +1,4 @@
-import { colors, createTheme } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 
 export const Colors={
     primary:"#5f2c3e",
@@ -17,7 +17,7 @@ export const Colors={
     dim_gray:"#696969",
     dove_gray:"#d5d5d5",
     body_bg:"#f3f6f9",
-    light_gray:"rbg(230,230,230)",
+    light_gray:"8B93FF",
 
 
     white:"#fff",
