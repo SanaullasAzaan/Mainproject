@@ -7,6 +7,7 @@ import { Stack, Tooltip, Typography } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import FitScreenIcon from "@mui/icons-material/FitScreen"
+import { products } from "../../data";
 //import { useEffect, useState } from "react";
 
 
@@ -17,7 +18,7 @@ export default function SingleProduct({product,matches}){
         <Product>
             <ProductImage src={product.image}/>
             <ProductMeta product={product} matches={matches}/>
-            <ProductActionsWrapper>
+            {/* <ProductActionsWrapper>
             <Stack direction= "row" >
             <ProductFavButton isfav={0}>
               <FavoriteIcon />
@@ -31,9 +32,11 @@ export default function SingleProduct({product,matches}){
                 <FitScreenIcon color="primary"/>
             </ProductActionButton>
             </Stack>
-            </ProductActionsWrapper>
+            </ProductActionsWrapper> */}
         </Product>
-        <ProductAddToCart  variant="contained">Add to cart</ProductAddToCart>
+        <ProductAddToCart  variant="contained" href={product.link}>
+            Know More
+        </ProductAddToCart>
         </>
     )
 }

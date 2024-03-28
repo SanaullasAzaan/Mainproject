@@ -3,11 +3,11 @@ import { Product, ProductActionsWrapper,ProductFavButton,
 } from "../../styles/Products";
 import{ ProductImage} from "../../styles/Products"
 import ProductMeta from "./productMeta";
-import { Stack, Tooltip, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import FitScreenIcon from "@mui/icons-material/FitScreen"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 
@@ -27,22 +27,22 @@ export default function SingleProductDesktop({product,matches}){
         <>
         <Product onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProductImage src={product.image}/>
-        <ProductFavButton isfav={0}>
+        {/* <ProductFavButton isfav={0}>
         <FavoriteIcon />
-        </ProductFavButton>
+        </ProductFavButton> */}
         {showOptions  && (
-          <ProductAddToCart show={showOptions} variant="contained">
-            Add To Cart
+          <ProductAddToCart show={showOptions} variant="contained" href={product.link}>
+            Know More
           </ProductAddToCart>
         )}
  <ProductActionsWrapper show={showOptions}>
             <Stack direction= "column" >
-            <ProductActionButton>
+            {/* <ProductActionButton>
                 <ShareIcon color="primary" />
-            </ProductActionButton>
-            <ProductActionButton>
+            </ProductActionButton> */}
+            {/* <ProductActionButton>
                 <FitScreenIcon color="primary"/>
-            </ProductActionButton>
+            </ProductActionButton> */}
             </Stack>
             </ProductActionsWrapper>
         </Product>

@@ -6,12 +6,12 @@ import { ProductMetaWrapper } from "../../styles/Products";
 export default function ProductMeta({product,matches}){
     return(
         <ProductMetaWrapper>
-            <Typography variant={matches ? 'h6' : 'h5'} lineHeight={2}>
+            <Typography variant={matches ? 'h6' : 'h5'} lineHeight={2} fontFamily={"sans-serif"}>
             {product.name}
             </Typography>
-            <Typography variant={matches ? 'caption':'body1'}>
+            {/* <Typography variant={matches ? 'caption':'body1'}>
             ${product.price}
-            </Typography>
+            </Typography> */}
         </ProductMetaWrapper>
     )
 }

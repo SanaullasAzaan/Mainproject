@@ -23,7 +23,8 @@ export const Product = styled(Box)(({ theme }) => ({
 export const ProductImage=styled('img')(({src,theme})=>({
     src: `url(${src})`,
     width:'100%',
-    background: Colors.light,
+    borderRadius: '50%',
+    background: Colors.border,
     padding:'10px',
     [theme.breakpoints.down("md")]:{
         width:'80%',
@@ -56,7 +57,7 @@ export const ProductFavButton = styled(ProductActionButton,{
     [theme.breakpoints.up('md')]: {
       position: 'absolute',
       bottom: '2%',
-      width: '300px',
+      width: '190px',
       padding: '10px 5px',
       animation:show &&`${slideInBottom} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
     },
