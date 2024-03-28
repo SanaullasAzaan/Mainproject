@@ -9,7 +9,7 @@ export const products=[
    },
    {
     id:2,
-    name:"Principal SSIT",
+    name:"Principal",
     price:129.34,
     descripsion:"ysgcdhcebch ecdhxejdewhdrgyfrj 3furhfuerhf c huhfuehfuvfe vhu cuefhvucefcgfhvg",
     image:"/images/products/pc.jpg",

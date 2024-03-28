@@ -13,9 +13,10 @@ export default function Products(){
 
    const renderProducts=products
    .map(product=>(
-        <Grid item key={product.id}
-         xs={8}
-         sm={8}
+        <Grid item 
+         key={product.id}
+         xs={2}
+         sm={4}
          md={3}
           display="flex" flexDirection={"column"}
           alignItems="center">
@@ -33,10 +34,10 @@ export default function Products(){
         <Container>
             <Grid
             container
-            spacing={{xs:2,md:3}}
+            spacing={{xs:4,md:3}}
             justifyContent={"center"}
             sx={{margin:'20px 4px 10px 4px'}}
-            columns={{xs:3,sm:8,md:12}}
+            columns={{xs:4,sm:8,md:12}}
             >
                 {renderProducts}
                 
