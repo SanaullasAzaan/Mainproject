@@ -4,6 +4,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/montez": "^5.0.18",
     "@mui/icons-material": "^5.15.14",
+    "@mui/system": "^5.15.14",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react": "^7.34.1",
     "react": "^18.2.0",
